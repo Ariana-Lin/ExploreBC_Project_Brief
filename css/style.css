@@ -1,9 +1,11 @@
-/* Explore BC Project - Starter Styles */
+* {
+    box-sizing: auto;  
+  }
 
+/* Explore BC Project - Starter Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 /* Add your styles here */
@@ -11,34 +13,54 @@ body {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 5px;
     padding: 0;
 }
+
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 10px;
+    padding: 5px 10px;
     background-color: #a5dfe5;
     border-bottom: 1px solid #ccc;
+    gap: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
+    padding: 10px 7px;
 }
 
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+    font: 40px;
     font-weight: bold;
-    font-optical-sizing: auto;
 }
 
 
+a {
+    padding: 10px 5px;
+}
+
 /*add focus effects to input fields */
-a:hover {
-    border: 2px solid #4CAF50;
-    box-shadow: 0 0 5px #4CAF50;
+.contact-us{
+    font-size: 30px;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 15px;
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.contact-us:hover{
+    opacity: 0.8;
+    border: 1px solid white;
+    box-shadow: 0 0 5px rgb(205,202,202);
+    background-color: #000000;
+    color: white;
 }
