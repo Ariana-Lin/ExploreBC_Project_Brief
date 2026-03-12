@@ -35,3 +35,10 @@ nav ul {
     font-weight: bold;
     font-optical-sizing: auto;
 }
+
+
+/*add focus effects to input fields */
+a:hover {
+    border: 2px solid #4CAF50;
+    box-shadow: 0 0 5px #4CAF50;
+}
