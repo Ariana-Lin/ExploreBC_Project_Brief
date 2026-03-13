@@ -1,52 +1,330 @@
 * {
-    box-sizing: auto;  
+    box-sizing: auto;
+    /*background-color: rgb(246, 227, 200);*/
+    /*background-attachment: fixed;*/
   }
+
+:root { /* is html element, but has higher weight */
+    /* css variables MUST start with -- */
+    --primary-color: #2d201c;
+    --primary-color-hover: black;
+}
+
+@media screen and (max-width:768px){
+
+
+.container{
+    flex-direction:column;
+}
+
+}
 
 /* Explore BC Project - Starter Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    width: auto;
+    /*background: linear-gradient(#c8e7e9, #d6f7ff, #97d1e7);*/
+    background-attachment: fixed;
+    max-width:100%;
+    height:auto;
+    margin:auto;
+    /*background: linear-gradient(to right, #95d5f3, #d2e5f3);*/
 }
 
 /* Add your styles here */
 
-nav ul {
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 25px;
+    background: transparent;
+    border: #000506 1px solid;
+    background: linear-gradient( #f5893b,  #fda218, #f7d352);
+    /*background: linear-gradient(to right,#dffcff, #4cd2fd, #1eaafa , #00497c);*/
+}
+
+nav.nav-links {
+    background: transparent;
+}
+
+
+.nav-links ul {
+    background-color: transparent;
     display: flex;
     list-style: none;
-    gap: 5px;
+    gap: 15px;
     padding: 0;
 }
 
 
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    background-color: #a5dfe5;
-    border-bottom: 1px solid #ccc;
-    gap: 20px;
+a.n{
+    text-decoration: none;
+    color: #faf2f0;
+    background-color: transparent;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 7px;
+a.n:hover{
+    background: transparent;
+    color: #1f2439;
 }
 
 .logo {
+    display: flex;
     font-family: 'Dancing Script', cursive;
     font: 40px;
     font-weight: bold;
+    color: #030304;
+    background-color: transparent;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.hero h1,
+.hero p{
+    font-size: clamp(1rem, 5vw, 2rem);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    padding: 1rem;
+    font-size: clamp(1rem, 5vw, 3rem);
+    top: 30%;
+}
+.hero p{
+    padding: 1rem;
+    font-size: clamp(0.5rem, 2vw, 1.3rem);
+    margin: 55px 0;
+}
+
+main .container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+.container section{
+    display: block;
+    flex:1;
+    min-width:120px;
+    overflow:hidden;
+}
+
+.container img{
+    width:100%;
+    height:400px;
+    aspect-ratio: 4 / 3;
+    object-fit:cover;
+    border-radius:12px;
+}
+  
+.container section:hover{
+    transform:scale(1.05);
+}
+  
+.container img:hover{
+    filter:brightness(1.2);
+    cursor: pointer;
+}
+
+.container:target{
+    display: flex;
+}
+
+.container section .btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /*background: transparent;*/
+    /*background-color: #f5893b;*/
+    background: linear-gradient( #f5893b,  #fda218, #f7d352);
+    color: #1f2439;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align:center;
+    z-index: 10;
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container section .btn:hover{
+    opacity: 0.8;
+    border: 1px solid white;
+    box-shadow: 0 0 5px rgb(205,202,202);
+    background-color: #f6ccd6;
+    color: #1f2439;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #1f2439;
+}
+
+.container h3 p{
+    font-size: clamp(1rem, 5vw, 2rem);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:#1f2439;
+    text-align:center;
+}
+
+.container h3{
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    top: 30%;
+    text-align: center;
+}
+
+.container p{
+    font-size: clamp(0.5rem, 2vw, 1.3rem);
+    top: 50%;
+    text-align: center;
 }
 
 
-a {
-    padding: 10px 5px;
+.footer{
+    /*text-decoration: overline;*/
+    text-align: center;
+    padding: 5px 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
+/*
+main .container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container section {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-left: -70px;
+    transition: 0.4s;
+    position: relative;
+    cursor: pointer;
+}
+
+.container section:first-child {
+margin-left: 0;
+}
+
+.container section img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+
+.container:hover section {
+    margin-left: -70px;
+}
+
+.container section:hover {
+margin-left: 0;
+transform: scale(1.08);
+z-index: 10;
+}
+
+.container section h3,
+.container section p {
+    position: absolute;
+    left: 15px;
+    color: white;
+    z-index: 2;
+}
+
+.container section h3 {
+  bottom: 40px;
+}
+
+.container section p {
+  bottom: 15px;
+  margin: 0;
+}
+
+.container section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 45%);
+}
+*/
+
+/*
+.Whistler img {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.Vancouver img {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.Victoria img {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.Tofino img {
+    width: 200px;   
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.Kelowna img {
+    width: 180px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.Revelstoke img {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+*/
 
 /*add focus effects to input fields */
+
+/*
 .contact-us{
     font-size: 30px;
     text-decoration: none;
@@ -64,3 +342,4 @@ a {
     background-color: #000000;
     color: white;
 }
+*/
