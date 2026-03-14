@@ -10,7 +10,7 @@
     --primary-color-hover: black;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:842px){
 
 
 .container{
@@ -57,6 +57,7 @@ nav.nav-links {
     gap: 15px;
     padding: 0;
 }
+
 
 
 a.n{
@@ -120,10 +121,6 @@ a.n:hover{
 
 .contact_us{
     display: flex;
-}
-
-.abtn1{
-    text-decoration: none;
 }
 
 .btn1 {
@@ -235,17 +232,16 @@ main .container{
 .container section .btn{
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    /*background: transparent;*/
-    /*background-color: #f5893b;*/
-    background: linear-gradient(#f7d352, #fda218,#ef9656);
-    color: #1f2439;
+    border-radius: 50px;
+    /*background: transparent;
+    *//*background-color: #f5893b;
+    */background: #ef9656;
+    color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align:center;
-    z-index: 10;
     position: relative;
-    bottom: 20px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -258,33 +254,30 @@ main .container{
     color: #1f2439;
 }
 
-.btn a{
-    text-decoration: none;
-    color: #1f2439;
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#f5893b;
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
 }
+    
 
-.container h3 p{
-    font-size: clamp(1rem, 5vw, 2rem);
+.van{
+    display: none;
     position: absolute;
     left:50%;
     top:50%;
     transform:translate(-50%,-50%);
-    color:#1f2439;
+    color:white;
     text-align:center;
 }
 
-.container h3{
-    font-size: clamp(1rem, 5vw, 1.3rem);
-    top: 30%;
-    text-align: center;
-}
+.van1:hover{
+    display: block;
 
-.container p{
-    font-size: clamp(0.5rem, 2vw, 1.3rem);
-    top: 50%;
-    text-align: center;
 }
-
 
 .footer{
     /*text-decoration: overline;*/
@@ -294,6 +287,47 @@ main .container{
     color: #333;
     border-top: #f5893b 7px solid;
 }
+
+
+a.totem{
+    position: fixed;
+    bottom: -35px;
+    right: -50px;
+    z-index: 20;
+}
+
+.totem_pole{
+    width: 260px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.totem_pole:hover{
+    transform: scale(1.1);
+}
+
+.totem::after{
+    content: "The world is so big,\A go and explore it.";
+    width:120px;
+    white-space: pre-line;
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    background: black;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,10px);
+}
+
+.totem:hover::after{
+    opacity: 1;
+    transform: translate(-50%,0);
+}
+
 /*
 main .container{
     display: flex;
