@@ -78,6 +78,7 @@ a.n:hover{
     font-weight: bold;
     color: #030304;
     background-color: transparent;
+    font-size: clamp(1rem, 5vw, 3rem);
 }
 
 .hero{
@@ -115,31 +116,29 @@ a.n:hover{
 }
 .hero p{
     padding: 1rem;
-    font-size: clamp(0.5rem, 2vw, 1.3rem);
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
     margin: 55px 0;
 }
 
 .contact_us{
     display: flex;
+    
 }
 
 .btn1 {
     text-decoration: none;
-    position: absolute;
+    position: relative;
     left:50%;
-    top:80%;
+    top: -50px;
     transform:translate(-50%,-50%);
-    z-index: 10;
-    border-radius: 12px;
+    border-radius: 50px;
     padding: 10px 20px;
     border: none;
-    background: linear-gradient(#f7d352, #fda218,#ef9656);
-    color: #1f2439;
+    background: #ef9656;
+    color: white;
     cursor: pointer;
-    font-size: clamp(0.5rem, 2vw, 1.3rem);
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
     z-index: 10;
-    opacity: 0.9;
-    margin-top: -345px;
 }
 
 .btn1:hover{
@@ -161,11 +160,29 @@ main .container{
     flex:1;
     min-width:120px;
     overflow:hidden;
+    position: relative;
+    border-radius: 12px;
 }
+
+.container section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.872),
+        rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
+}
+
 
 .container img{
     width:100%;
-    height:400px;
+    height:500px;
     aspect-ratio: 4 / 3;
     object-fit:cover;
     border-radius:12px;
@@ -188,6 +205,7 @@ main .container{
 }
 
 .img{
+    display: block;
     width:220px;
     cursor:pointer;
     border-radius:10px;
@@ -198,7 +216,7 @@ main .container{
     transform:scale(1.05);
 }
 
-/* 弹出层 */
+/* popup layer */
 .overlay1{
     position:fixed;
     top:0;
@@ -210,12 +228,12 @@ main .container{
     z-index: 1000;
 }
 
-/* 点击后显示 */
+/* show after click */
 .overlay1:target{
     display:block;
 }
 
-/* 大图 */
+/* big picture */
 .full{
     max-width:80%;
     max-height:80%;
@@ -230,20 +248,23 @@ main .container{
 }
 
 .container section .btn{
-    padding: 10px 20px;
+    display: inline-block;
+    padding:   10px 5px;
     border: none;
     border-radius: 50px;
-    /*background: transparent;
-    *//*background-color: #f5893b;
-    */background: #ef9656;
+    background: #ef9656;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align:center;
-    position: relative;
+    text-decoration: none;
+    position: absolute;
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 200px;
+    z-index: 2;
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
 }
 
 .container section .btn:hover{
@@ -254,33 +275,37 @@ main .container{
     color: #1f2439;
 }
 
-.btn{
-    display:inline-block;
-    padding:10px 20px;
-    background:#f5893b;
-    color:white;
-    border-radius:50px;
-    text-decoration:none;
-}
+
     
-
-.van{
-    display: none;
+.card-text{
     position: absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-    color:white;
-    text-align:center;
+    left: 20px;
+    top: 230px;
+    right: 20px;
+    z-index: 2;
+    color: white;
+    width: 80%;
+    
 }
 
-.van1:hover{
+
+
+
+.card-text h3::after{
+    position: absolute;
+    content: "";
     display: block;
-
+    width: 50px;
+    height: 3px;
+    background-color: #f5893b;
+    margin-top: -1px;
+    border-radius: 2px;
 }
+
+
 
 .footer{
-    /*text-decoration: overline;*/
+    display: block;
     text-align: center;
     padding: 5px 0;
     background-color: #f5f5f5;
@@ -288,7 +313,7 @@ main .container{
     border-top: #f5893b 7px solid;
 }
 
-
+/*totem_pole*/
 a.totem{
     position: fixed;
     bottom: -35px;
@@ -308,25 +333,59 @@ a.totem{
 
 .totem::after{
     content: "The world is so big,\A go and explore it.";
-    width:120px;
+    /*changeanysentenceyouwant,(\A)meanslinebreak*/width:120px;
     white-space: pre-line;
     position: absolute;
     bottom: 90%;
     left: 50%;
-    background: black;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.872),
+            rgba(0, 0, 0, 0)    
+            );
     color: white;
     padding: 6px 10px;
     border-radius: 50px;
-    font-size: 12px;
+    font-size: 15px;
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%,10px);
+    cursor: pointer;
+    /*animation: showBubble 10s ease infinite;*/
 }
 
 .totem:hover::after{
     opacity: 1;
     transform: translate(-50%,0);
 }
+
+/*@keyframes showBubble{
+
+    0%{
+    opacity:0;
+    transform:translate(-50%,10px);
+    }
+    
+    40%{
+    opacity:0;
+    }
+    
+    50%{
+    opacity:1;
+    transform:translate(-50%,0);
+    }
+    
+    80%{
+    opacity:1;
+    }
+    
+    100%{
+    opacity:0;
+    transform:translate(-50%,10px);
+    }
+    
+    }
+*/  
+
+
 
 /*
 main .container{
