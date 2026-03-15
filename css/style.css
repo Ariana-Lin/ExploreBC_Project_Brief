@@ -32,7 +32,9 @@ body {
 }
 
 /* Add your styles here */
-
+.lp {
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
+}
 
 .navbar{
     display: flex;
