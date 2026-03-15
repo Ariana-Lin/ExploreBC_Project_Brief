@@ -404,7 +404,13 @@ a.totem{
 .contact-form button:hover{
     background:#1b4332;
 }
-
+.footer{
+    background-color: #2d6a4f;
+    color:white;
+    text-align: centre;
+    padding: 15px;
+    margin-top: 40px;
+}
 /*END OF CSS STYLE for Contact.html page */
 
 
