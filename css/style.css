@@ -449,6 +449,13 @@ a.totem{
     border: 1px, solid #ccc;
     border-radius: 6px;
 }
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:#ef9656 ;
+    border-color: #ef9656;
+}
+
 .contact-form button{
     padding: 12px;
     background: #2d6a4f;
