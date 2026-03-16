@@ -28,6 +28,7 @@ body {
     max-width:100%;
     height:auto;
     margin:auto;
+   
     /*background: linear-gradient(to right, #95d5f3, #d2e5f3);*/
 }
 
@@ -377,6 +378,7 @@ a.totem{
 
 /*START OF CSS STYLE for Contact.html page */
 
+
 .contact-page{
     padding:60px 20px;
     background-color: #f5f5f5;
@@ -468,17 +470,20 @@ a.totem{
 /*START FOOD SECTION*/
 .food-page {
     padding: 40px 20px;
-    background-color: #f5f5f5;
+  /* background-color: #d7e9e1;*/ 
 }
 
-.food-hero {
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto 40px auto;
+.food-hero{
     background-color: white;
     padding: 40px 20px;
     border-radius: 12px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
+
 
 .food-hero h1 {
     font-size: 2.2rem;
@@ -504,8 +509,13 @@ a.totem{
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-top:8px solid #ef9656;
+    
 }
-
+.food-card:hover{
+transform: translateY(-6px);
+box-shadow:0 10px 18px rgba(0,0,0,0.15);
+}
 .food-img{
 width:100%;
 height:170px;
@@ -522,15 +532,19 @@ border-radius:10px 10px 0 0;
     color: #2d6a4f;
 }
 
-.extra-food-info {
-    max-width: 1100px;
-    margin: 0 auto;
+.extra-food-info{
+background:#d7e9e1;
+padding:30px 20px;
+max-width:1100px;
+margin:40px auto;
+border-radius:12px;
 }
+
 
 .extra-food-info h2 {
     text-align: center;
     margin-bottom: 25px;
-    color: #2d6a4f;
+    color: #0b0f0d;
 }
 
 .explore-boxes {
@@ -547,6 +561,7 @@ border-radius:10px 10px 0 0;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     text-align: center;
+
 }
 
 .explore-box h3 {
