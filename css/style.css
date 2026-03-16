@@ -488,6 +488,7 @@ a.totem{
 .food-hero h1 {
     font-size: 2.2rem;
     margin-bottom: 10px;
+    color: #2d6a4f;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
 }
 
