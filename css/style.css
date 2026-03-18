@@ -382,6 +382,7 @@ a.totem{
 .contact-page{
     padding:60px 20px;
     background-color: #f5f5f5;
+    min-height: 80vh;
 }
 .contact-container{
    max-width:1000px;
