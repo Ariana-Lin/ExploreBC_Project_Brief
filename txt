@@ -4,3 +4,31 @@ font style(https://fonts.google.com/selection/embed)
 
 
 new
+
+
+Use of AI in This Project (Olena)
+
+AI was used as a support tool to assist with content creation, design decisions, and technical implementation. 
+I used AI to generate destination descriptions and activity ideas, which I reviewed and adjusted to fit the theme and style of my website.
+
+AI also helped improve the UI/UX design, including text overlay on images, better positioning, 
+spacing, and selecting colors to improve readability and create a more professional travel website look.
+
+For the technical part, AI assisted with CSS and responsive design, including the use of flexbox, grid, clamp() for responsive text, 
+and media queries to adapt the layout for different screen sizes. It also helped implement styling techniques such as pseudo-elements (::before), which were used to create overlays on images to improve text visibility without adding extra HTML elements.
+
+Additionally, AI supported problem-solving and debugging, helping me understand and fix issues in HTML and CSS, including layout alignment and positioning.
+
+Examples of AI Prompts Used
+
+“Create short descriptions for BC destinations for a travel website”
+
+“How to make text stand out on an image using CSS overlay”
+
+“How to create a responsive card layout using flexbox or grid”
+
+“How to use media queries for responsive design”
+
+“How to use ::before for image overlay in CSS”
+
+All final decisions, edits, and implementation were completed by me, and I ensured I understood how the code works.
