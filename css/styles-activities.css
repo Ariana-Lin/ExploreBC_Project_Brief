@@ -271,6 +271,49 @@ a.n:hover {
     border-top: #f5893b 7px solid;
 }
 
+a.totem{
+    position: fixed;
+    bottom: -35px;
+    right: -50px;
+    z-index: 20;
+}
+
+.totem_pole{
+    width: 260px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.totem_pole:hover{
+    transform: scale(1.1);
+}
+
+.totem::after{
+    content: "The world is so big,\A go and explore it.";
+    /*changeanysentenceyouwant,(\A)meanslinebreak*/width:120px;
+    white-space: pre-line;
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.872),
+            rgba(0, 0, 0, 0)    
+            );
+    color: white;
+    padding: 6px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,10px);
+    cursor: pointer;
+    /*animation: showBubble 10s ease infinite;*/
+}
+
+.totem:hover::after{
+    opacity: 1;
+    transform: translate(-50%,0);
+}
+
 /* TABLET */
 @media (max-width: 900px) {
     .activities {
