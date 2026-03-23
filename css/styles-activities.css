@@ -11,36 +11,43 @@ body {
 }
 
 /* NAVBAR */
-.navbar {
-     display: flex;
+
+.lp {
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
+}
+.navbar{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1px 25px;
     background-color: white;
     border-bottom: #f5893b 7px solid;
+    /*background: linear-gradient( #f5893b,  #fda218, #f7d352);*/
+    /*background: linear-gradient(to right,#dffcff, #4cd2fd, #1eaafa , #00497c);*/
 }
 
 nav.nav-links {
     background: transparent;
 }
 
+
 .nav-links ul {
     background-color: transparent;
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     gap: 15px;
     padding: 0;
-    margin: 0;
 }
 
-a.n {
+
+
+a.n{
     text-decoration: none;
     color: #030304;
     background-color: transparent;
 }
 
-a.n:hover {
+a.n:hover{
     background: transparent;
     color: #1f2439;
 }
@@ -48,10 +55,11 @@ a.n:hover {
 .logo {
     display: flex;
     font-family: 'Dancing Script', cursive;
+    font: 40px;
     font-weight: bold;
     color: #030304;
     background-color: transparent;
-    font-size: clamp(1.4rem, 4vw, 3rem);
+    font-size: clamp(1rem, 5vw, 3rem);
 }
 
 /* HERO */
