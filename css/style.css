@@ -865,7 +865,7 @@ z-index: 10;
 /* hero banner content*/
 
 #destinations-page .destinations-hero {
-    background: url('images/hero-destinations.jpg'); 
+    background: url('../images/hero-destinations.jpg'); 
     background-size: cover;
     background-position: center;
     height: 400px;                
