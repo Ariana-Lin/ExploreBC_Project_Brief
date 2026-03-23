@@ -265,14 +265,13 @@ a.n:hover {
     color: #555;
 }
 
-.footer {
+.footer{
+    display: block;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 18px;
-    color: white;
-    background-color: #2d6a4f;
-    margin-top: 50px;
-    border-top: 7px solid #f5893b;
+    padding: 5px 0;
+    background-color: #f5f5f5;
+    color: #333;
+    border-top: #f5893b 7px solid;
 }
 
 
