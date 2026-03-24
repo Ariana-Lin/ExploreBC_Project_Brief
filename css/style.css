@@ -52,6 +52,10 @@ nav.nav-links {
     background: transparent;
 }
 
+.nav-links li a:hover {
+  color: #f5893b;
+}
+
 
 .nav-links ul {
     background-color: transparent;
