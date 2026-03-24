@@ -836,7 +836,7 @@ z-index: 10;
   text-align: center;
   margin-bottom: 10px;
   font-family: 'Dancing Script', cursive;
-  font-size: clamp(1rem, 5vw, 3rem);
+  font-size: clamp(1.4rem, 4vw, 3rem);
   color: #030304;
 }
 
@@ -854,7 +854,7 @@ z-index: 10;
   text-decoration: none;
   color: black;
   white-space: nowrap;
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
   transition: 0.3s;
 }
 
