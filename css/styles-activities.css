@@ -335,17 +335,19 @@ a.totem{
 }
 
 /* PHONE */
-@media (max-width: 600px) {
-    .navbar {
+@media (max-width: 768px) {
+      .navbar {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 12px 16px;
-    }
-
-    .nav-links ul {
-        flex-direction: column;
+        align-items: center;
         gap: 10px;
-        width: 100%;
+        padding: 15px 20px;}
+    
+     .nav-links ul, .lp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
     }
 
     .intro {
