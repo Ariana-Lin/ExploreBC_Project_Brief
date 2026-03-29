@@ -170,7 +170,7 @@ a.n:hover {
     padding: 18px 24px 12px;
     font-size: clamp(1.3rem, 3vw, 1.75rem);
     font-weight: 600;
-    color: #2c3e50;
+    color: #2e6b3d;
     letter-spacing: 0.3px;
     border-bottom: 2px solid #ff7a18;
     display: inline-block;
@@ -255,7 +255,7 @@ a.n:hover {
     margin: 0 0 12px;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #22364a;
+    color: #2e6b3d;
 }
 
 .tip-box p {
