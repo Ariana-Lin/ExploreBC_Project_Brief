@@ -15,7 +15,7 @@ body {
     font-size: clamp(0.8rem, 2vw, 1.3rem);
 }
 .navbar {
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1px 25px;
@@ -25,6 +25,9 @@ body {
 
 nav.nav-links {
     background: transparent;
+}
+.nav-links li a.n:hover {
+  color: #f5893b;
 }
 
 .nav-links ul {
@@ -266,11 +269,11 @@ a.n:hover {
 }
 
 .footer{
-    display: block;
+   background-color: #2d6a4f;
+    color: white;
     text-align: center;
-    padding: 5px 0;
-    background-color: #f5f5f5;
-    color: #333;
+    padding: 18px;
+    margin-top: 50px;
     border-top: #f5893b 7px solid;
 }
 
