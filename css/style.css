@@ -821,52 +821,54 @@ z-index: 10;
 */
 /* destinations CSS*/
 
-#destinations-page .destinations-navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 7px solid #f5893b;
+#destinations-page .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 25px;
+    background-color: white;
+    border-bottom: #f5893b 7px solid;
+    /*background: linear-gradient( #f5893b,  #fda218, #f7d352);*/
+    /*background: linear-gradient(to right,#dffcff, #4cd2fd, #1eaafa , #00497c);*/
 }
 
-#destinations-page .nav-links {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-around;
+#destinations-page nav.nav-links {
+    background: transparent;
 }
 
-#destinations-page .logo {
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: 'Dancing Script', cursive;
-  font-size: clamp(1.4rem, 4vw, 3rem);
-  color: #030304;
-}
-
-#destinations-page .nav-links ul { 
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 15px;/*clamp(10px, 2vw, 30px); testing - taking out*/
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  flex-wrap: wrap;
-  font-size: clamp(0.8rem, 2vw, 1.3rem); ---testing
-}
-
-#destinations-page .nav-links li a {
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
-  font-size: clamp(0.8rem, 2vw, 1.3rem);
-  transition: 0.3s;
-}
-
-#destinations-page .nav-links li a:hover {
+#destinations-page .nav-links li a.n:hover {
   color: #f5893b;
 }
 
+
+#destinations-page .nav-links ul {
+    background-color: transparent;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+}
+
+#destinations-page a.n{
+    text-decoration: none;
+    color: #030304;
+    background-color: transparent;
+}
+
+#destinations-page a.n:hover{
+    background: transparent;
+    color: #1f2439;
+}
+
+#destinations-page .logo {
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    font: 40px;
+    font-weight: bold;
+    color: #030304;
+    background-color: transparent;
+    font-size: clamp(1rem, 5vw, 3rem);
+}
 /* hero banner content*/
 
 #destinations-page .destinations-hero {
