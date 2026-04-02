@@ -848,10 +848,11 @@ z-index: 10;
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: clamp(10px, 2vw, 30px);
+  gap: 15px;/*clamp(10px, 2vw, 30px); testing - taking out*/
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   flex-wrap: wrap;
+  font-size: clamp(0.8rem, 2vw, 1.3rem); ---testing
 }
 
 #destinations-page .nav-links li a {
