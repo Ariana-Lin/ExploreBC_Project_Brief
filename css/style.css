@@ -1,11 +1,8 @@
 * {
     box-sizing: auto;
-    /*background-color: rgb(246, 227, 200);*/
-    /*background-attachment: fixed;*/
   }
 
-:root { /* is html element, but has higher weight */
-    /* css variables MUST start with -- */
+:root { 
     --primary-color: #2d201c;
     --primary-color-hover: black;
 }
@@ -23,13 +20,10 @@
 body {
     font-family: Arial, sans-serif;
     width: auto;
-    /*background: linear-gradient(#c8e7e9, #d6f7ff, #97d1e7);*/
     background-attachment: fixed;
     max-width:100%;
     height:auto;
     margin:auto;
-   
-    /*background: linear-gradient(to right, #95d5f3, #d2e5f3);*/
 }
 
 /* Add your styles here */
@@ -44,8 +38,6 @@ body {
     padding: 1px 25px;
     background-color: white;
     border-bottom: #f5893b 7px solid;
-    /*background: linear-gradient( #f5893b,  #fda218, #f7d352);*/
-    /*background: linear-gradient(to right,#dffcff, #4cd2fd, #1eaafa , #00497c);*/
 }
 
 nav.nav-links {
@@ -356,7 +348,8 @@ a.totem{
 
 .totem::after{
     content: "The world is so big,\A go and explore it.";
-    /*changeanysentenceyouwant,(\A)meanslinebreak*/width:120px;
+    /*changeanysentenceyouwant,(\A)meanslinebreak*/
+    width:120px;
     white-space: pre-line;
     position: absolute;
     bottom: 90%;
@@ -372,7 +365,6 @@ a.totem{
     pointer-events: none;
     transform: translate(-50%,10px);
     cursor: pointer;
-    /*animation: showBubble 10s ease infinite;*/
 }
 
 .totem:hover::after{
@@ -659,166 +651,7 @@ box-shadow:0 10px 18px rgba(0,0,0,0.15);
 /*END FOOD SECTION*/
 
 
-/*@keyframes showBubble{
 
-    0%{
-    opacity:0;
-    transform:translate(-50%,10px);
-    }
-    
-    40%{
-    opacity:0;
-    }
-    
-    50%{
-    opacity:1;
-    transform:translate(-50%,0);
-    }
-    
-    80%{
-    opacity:1;
-    }
-    
-    100%{
-    opacity:0;
-    transform:translate(-50%,10px);
-    }
-    
-    }
-*/  
-
-
-
-/*
-main .container{
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-}
-
-.container section {
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-left: -70px;
-    transition: 0.4s;
-    position: relative;
-    cursor: pointer;
-}
-
-.container section:first-child {
-margin-left: 0;
-}
-
-.container section img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-}
-
-
-.container:hover section {
-    margin-left: -70px;
-}
-
-.container section:hover {
-margin-left: 0;
-transform: scale(1.08);
-z-index: 10;
-}
-
-.container section h3,
-.container section p {
-    position: absolute;
-    left: 15px;
-    color: white;
-    z-index: 2;
-}
-
-.container section h3 {
-  bottom: 40px;
-}
-
-.container section p {
-  bottom: 15px;
-  margin: 0;
-}
-
-.container section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 45%);
-}
-*/
-
-/*
-.Whistler img {
-    width: 200px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.Vancouver img {
-    width: 200px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.Victoria img {
-    width: 200px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.Tofino img {
-    width: 200px;   
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.Kelowna img {
-    width: 180px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.Revelstoke img {
-    width: 200px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-*/
-
-/*add focus effects to input fields */
-
-/*
-.contact-us{
-    font-size: 30px;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 15px;
-    transition: 0.3s;
-    background-color: white;
-    color: black;
-}
-
-.contact-us:hover{
-    opacity: 0.8;
-    border: 1px solid white;
-    box-shadow: 0 0 5px rgb(205,202,202);
-    background-color: #000000;
-    color: white;
-}
-*/
 /* destinations CSS*/
 
 #destinations-page .navbar{
