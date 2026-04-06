@@ -795,14 +795,6 @@ box-shadow:0 10px 18px rgba(0,0,0,0.15);
     border-top: 7px solid #f5893b;
 }
 
-#destinations-page .totem_pole {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 120px;
-    z-index: 3;
-}
-
 @media screen and (width >= 768px) {
 
   #destinations-page .destinations-navbar {
@@ -837,11 +829,47 @@ box-shadow:0 10px 18px rgba(0,0,0,0.15);
     width: 30%;
   }
 
-  #destinations-page .totem_pole {
-    bottom: 0px;
-    right: 0px;
-    width: 20%;
-    max-width: 260px;
+  a.totem{
+    position: fixed;
+    bottom: -35px;
+    right: -50px;
+    z-index: 20;
+  }
+
+  .totem_pole{
+    width: 260px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .totem_pole:hover{
+    transform: scale(1.1);
+  }
+
+  .totem::after{
+    content: "The world is so big,\A go and explore it.";
+    /*changeanysentenceyouwant,(\A)meanslinebreak*/width:120px;
+    white-space: pre-line;
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.872),
+            rgba(0, 0, 0, 0)    
+            );
+    color: white;
+    padding: 6px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,10px);
+    cursor: pointer;
+    /*animation: showBubble 10s ease infinite;*/
+  }
+
+  .totem:hover::after{
+    opacity: 1;
+    transform: translate(-50%,0);
   }
 
 }
