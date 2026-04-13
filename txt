@@ -5,6 +5,18 @@ font style(https://fonts.google.com/selection/embed)
 
 new
 
+AI usage in this Project (Mila)
+
+I used AI to help generate initial destination descriptions and to explore visual inspiration for the website design. 
+
+I also used AI as a learning resource to better understand certain CSS techniques, such as creating a hero banner with an overlay, 
+positioning text over images, and structuring responsive layouts. 
+
+Additionally, AI helped with troubleshooting and debugging issues in HTML and CSS, such as ensuring proper alignment in each 
+destination card and making sure my designs transitioned smoothly across various screen sizes. 
+
+Before implementing any AI-assisted code, I made sure I understood how it worked and how it applied to my project. All code was 
+reviewed, adapted, and implemented by me to fit the design and the requirements of the project. 
 
 Use of AI in This Project (Olena)
 
