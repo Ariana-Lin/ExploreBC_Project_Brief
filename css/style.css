@@ -14,11 +14,7 @@
 /* Explore BC Project - Starter Styles */
 body {
     font-family: Arial, sans-serif;
-    width: auto;
-    background-attachment: fixed;
-    max-width:100%;
-    height:auto;
-    margin:auto;
+    margin:0;
 }
 
 /* Add your styles here */
