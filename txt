@@ -44,3 +44,8 @@ Examples of AI Prompts Used
 “How to use ::before for image overlay in CSS”
 
 All final decisions, edits, and implementation were completed by me, and I ensured I understood how the code works.
+
+AI usage in this Project (Ariana)
+
+I used AI tools as a reference to help me understand some concepts and improve my code.
+For example, I used it to check syntax, get explanations for CSS properties, and explore different design ideas.
