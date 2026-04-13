@@ -49,3 +49,22 @@ AI usage in this Project (Ariana)
 
 I used AI tools as a reference to help me understand some concepts and improve my code.
 For example, I used it to check syntax, get explanations for CSS properties, and explore different design ideas.
+
+AI usage in this project in my part (Tashfia Islam)
+I used AI as a support tool throughout this project to assist with both learning and development.
+
+I used AI to help understand HTML and CSS concepts such as Flexbox layout, spacing, alignment, and responsive design using media queries. It also helped me understand how to structure sections like the hero section and card-based layouts.
+
+AI was used to troubleshoot and debug issues, such as fixing alignment problems in the contact form, adjusting spacing, and ensuring the layout worked properly across different screen sizes.
+
+I also used AI to get design suggestions, including improving the UI by using consistent colors, spacing, hover effects, and modern styling techniques like box-shadow and border-radius.
+
+Additionally, AI helped generate ideas for content such as food descriptions and section organization, which I reviewed and modified to fit my website theme.
+
+Before using any AI-generated code, I made sure I understood how it worked. All final code was reviewed, edited, and implemented by me according to the project requirements.
+
+***This website also helped me understand HTML and CSS concepts more clearly, including layout, styling, and responsive design.***
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties
+https://www.w3schools.com/
+https://www.freecodecamp.org/
+https://css-tricks.com/
