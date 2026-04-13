@@ -2,11 +2,6 @@
     box-sizing: auto;
   }
 
-:root { 
-    --primary-color: #2d201c;
-    --primary-color-hover: black;
-}
-
 @media screen and (max-width:842px){
 
 
