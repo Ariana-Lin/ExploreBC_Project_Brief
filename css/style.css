@@ -1,9 +1,8 @@
 * {
-    box-sizing: border-box;
+    box-sizing: auto;
   }
 
 @media screen and (max-width:842px){
-
 
 .container{
     flex-direction:column;
@@ -14,7 +13,7 @@
 /* Explore BC Project - Starter Styles */
 body {
     font-family: Arial, sans-serif;
-    margin:0;
+    margin: 0;
 }
 
 /* Add your styles here */
@@ -31,7 +30,7 @@ body {
     border-bottom: #f5893b 7px solid;
 }
 
-nav.nav-links {
+.nav-links {
     background: transparent;
 }
 
@@ -39,27 +38,23 @@ nav.nav-links {
   color: #f5893b;
 }
 
-
 .nav-links ul {
-    background-color: transparent;
     display: flex;
     list-style: none;
     gap: 15px;
     padding: 0;
+    margin: 0;
 }
-
-
 
 a.n{
     text-decoration: none;
     color: #030304;
-    background-color: transparent;
 }
 
 a.n:hover{
-    background: transparent;
-    color: #1f2439;
+    color: #f5893b;
 }
+
 
 .logo {
     display: flex;
