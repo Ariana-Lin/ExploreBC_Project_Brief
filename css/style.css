@@ -50,19 +50,15 @@ a.n{
     text-decoration: none;
     color: #030304;
 }
-
+/*
 a.n:hover{
     color: #f5893b;
 }
-
-
+*/
 .logo {
-    display: flex;
     font-family: 'Dancing Script', cursive;
-    font: 40px;
     font-weight: bold;
     color: #030304;
-    background-color: transparent;
     font-size: clamp(1rem, 5vw, 3rem);
 }
 
@@ -141,7 +137,6 @@ main .container{
 }
 
 .container section{
-    display: block;
     flex:1;
     min-width:120px;
     overflow:hidden;
@@ -180,7 +175,6 @@ main .container{
 
 .container img:hover{
     filter:brightness(1.2);
-    cursor: pointer;
 }
 
 .container section::after{
@@ -194,7 +188,6 @@ main .container{
     padding:5px 10px;
     border-radius:20px;
     font-size:14px;
-
     opacity:0;
     transition:0.3s;
     z-index:3;
@@ -248,10 +241,6 @@ main .container{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-}
-
-.container:target{
-    display: flex;
 }
 
 .container section .btn{
@@ -821,42 +810,6 @@ box-shadow:0 10px 18px rgba(0,0,0,0.15);
     bottom: -35px;
     right: -50px;
     z-index: 20;
-  }
-
-  .totem_pole{
-    width: 260px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .totem_pole:hover{
-    transform: scale(1.1);
-  }
-
-  .totem::after{
-    content: "The world is so big,\A go and explore it.";
-    /*changeanysentenceyouwant,(\A)meanslinebreak*/width:120px;
-    white-space: pre-line;
-    position: absolute;
-    bottom: 90%;
-    left: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.872),
-            rgba(0, 0, 0, 0)    
-            );
-    color: white;
-    padding: 6px 10px;
-    border-radius: 50px;
-    font-size: 15px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%,10px);
-    cursor: pointer;
-    /*animation: showBubble 10s ease infinite;*/
-  }
-
-  .totem:hover::after{
-    opacity: 1;
-    transform: translate(-50%,0);
   }
 
 }
