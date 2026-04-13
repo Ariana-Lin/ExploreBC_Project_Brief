@@ -1,5 +1,5 @@
 * {
-    box-sizing: auto;
+    box-sizing: border-box;
   }
 
 @media screen and (max-width:842px){
